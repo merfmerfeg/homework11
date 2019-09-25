@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name"></h1>
+          <p class="user-info__job"></p>
+          <button class="button user-info__edit-button">Edit</button>
+        </div>
+        <button class="button user-info__button">+</button>
+      </div>
+    </div>
+    <div class="places-list root__section">
+
+      <!-- Пример вёрстки карточки: 
+
+      <div class="place-card" id="123321">
+        <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+          <button class="place-card__delete-icon"></button>
+        </div>
+        <div class="place-card__description">
+          <h3 class="place-card__name">Камчатка</h3>
+          <div class="place-card__like-container">
+            <button class="place-card__like-icon"></button>
+            <p class="place-card__like-count">0</p>
+          </div>
+        </div>
+      </div>
+	  -->
+
+    </div>
+    <div class="popup" id="popup-edit-card">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close" id="popup-edit-card-close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new">
+            <input type="text" name="fullName" class="popup__input popup__input_type_name" placeholder="Название">
+            <p class ="popup__verification-error" name="fullNameErr"></p>
+            <input type="text" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку">
+            <p class ="popup__verification-error" name="linkErr"></p>
+            <button type name="btnAdd" class="button popup__button popup__button_disable" disabled>+</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="popup-edit-profile">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close" id="popup-edit-profile-close">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form" name="editProfile">
+            <input type="text" name="fullName" class="popup__input popup__input_type_name" placeholder="Имя">
+            <p class ="popup__verification-error" name="fullNameErr"></p>
+            <input type="text" name="aboutOneself" class="popup__input popup__input_type_about-oneself" placeholder="О себе">
+            <p class ="popup__verification-error" name="aboutOneselfErr"></p>
+            <button type name="btnAdd" class="button popup__button popup__button_profile popup__button_disable" disabled>Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="popup-edit-avatar">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close" id="popup-edit-profile-close">
+        <h3 class="popup__title">Обновить аватар</h3>
+        <form class="popup__form" name="editAvatar">
+          <input type="text" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на аватар">
+          <p class ="popup__verification-error" name="linkErr"></p>
+          <button type name="btnAdd" class="button popup__button popup__button_profile popup__button_disable" disabled>Сохранить</button>
+      </form>
+      </div>
+    </div>
+
+    <div class="popup" id="popup-image">
+      <div class="popup__content popup__content_image">
+          <img src="./images/close.svg" alt="" class="popup__close" id="popup-image-close">
+          <img class="popup__image">
+      </div>
+    </div>
+
+
+  </div>
+  <script src="scripts/Api.js"></script>
+  <script src="scripts/UserInfo.js"></script>
+  <script src="scripts/cards/Card.js"></script>
+  <script src="scripts/cards/CardList.js"></script>
+  <script src="scripts/popups/Popup.js"></script>
+  <script src="scripts/popups/ImagePopup.js"></script>
+  <script src="scripts/popups/FormPopup.js"></script>
+  <script src="scripts/popups/Field.js"></script>
+  <script src="scripts/popups/ButtonSubmit.js"></script>
+  <script src="scripts/script.js"></script>
+
+</body>
+</html>
