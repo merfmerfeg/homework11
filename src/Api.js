@@ -1,11 +1,12 @@
-class Api {
+export default class Api {
     _tokenId = undefined;
     _cohortNum = undefined;
-    _serverAddress = "http://95.216.175.5";
+    _serverAddress = undefined;
 
-    constructor(tokenId, cohortNum) {
+    constructor(tokenId, cohortNum, serverAddress) {
         this._tokenId = tokenId;
         this._cohortNum = cohortNum;
+        this._serverAddress = serverAddress;
     }
 
     async getUserData() {

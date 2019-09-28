@@ -1,4 +1,4 @@
-class Field {
+export default class Field {
     constructor(inputField, pErrText) {
         this.inputField = inputField;
         this.pErrText = pErrText;

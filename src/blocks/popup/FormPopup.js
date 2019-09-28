@@ -1,4 +1,8 @@
-class FormPopup extends Popup {
+import Popup from "./";
+import Field from "./";
+import ButtonSubmit from "./";
+
+export default class FormPopup extends Popup {
     //form
     //submitBtn
 

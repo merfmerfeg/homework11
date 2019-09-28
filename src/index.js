@@ -1,8 +1,19 @@
+import Api from "./";
+import ImagePopup from "./blocks/popup";
+import FormPopup from "./blocks/popup";
+import Card from "./blocks/popup";
+import UserInfo from "./blocks/popup";
+import CardList from "./blocks/popup";
+
+import "./index.css";
+
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/' : 'https://praktikum.tk/';
+
 //=====Глобальные переменные====
 loadAsync();
 
 async function loadAsync() {
-    const api = new Api("id", "2");
+    const api = new Api("74c4de3e-5cbb-41c8-a92e-94c773d7de81", "2", serverUrl);
     const imagePopup = new ImagePopup("popup-image");
     const popupAddCard = new FormPopup("popup-edit-card");
     const popupEditProfile = new FormPopup("popup-edit-profile");

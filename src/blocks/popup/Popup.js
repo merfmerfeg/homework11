@@ -1,4 +1,6 @@
-class Popup {
+import './popup.css';
+
+export default class Popup {
     //popupContainer
     constructor (id) {
         this.popupContainer = document.getElementById(id);

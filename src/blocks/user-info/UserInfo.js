@@ -1,4 +1,6 @@
-class UserInfo {
+import './user-info.css';
+
+export default class UserInfo {
 	_id = undefined;
 	_userName = undefined;
 	_userJob = undefined;

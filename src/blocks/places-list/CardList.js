@@ -1,4 +1,7 @@
-class CardList {
+import './places-list.css';
+import Card from "../place-card"
+
+export default class CardList {
 
     /* Можно лучше: когда много параметров, лучше обернуть их в объект, иначе легко запутаться в их последовательности */
     constructor(selector, initialCardList, userId, imagePopupClass, 
