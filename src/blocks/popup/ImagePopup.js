@@ -1,4 +1,4 @@
-import Popup from "./";
+import Popup from "./Popup";
 
 export default class ImagePopup extends Popup {
     open(imageLink) {

@@ -1,6 +1,6 @@
-import Popup from "./";
-import Field from "./";
-import ButtonSubmit from "./";
+import Popup from "./Popup";
+import Field from "./Field";
+import ButtonSubmit from "./ButtonSubmit";
 
 export default class FormPopup extends Popup {
     //form

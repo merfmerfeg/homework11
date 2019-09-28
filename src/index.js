@@ -1,13 +1,14 @@
-import Api from "./";
-import ImagePopup from "./blocks/popup";
-import FormPopup from "./blocks/popup";
-import Card from "./blocks/popup";
-import UserInfo from "./blocks/popup";
-import CardList from "./blocks/popup";
+import Api from "../src/Api";
+import ImagePopup from "./blocks/popup/ImagePopup.js";
+import FormPopup from "./blocks/popup/FormPopup.js";
+import Card from "./blocks/place-card/Card.js";
+import UserInfo from "./blocks/user-info/UserInfo.js";
+import CardList from "./blocks/places-list/CardList.js";
 
 import "./index.css";
 
-const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/' : 'https://praktikum.tk/';
+//const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/' : 'https://praktikum.tk/';
+//const serverUrl = "http://95.216.175.5"
 
 //=====Глобальные переменные====
 loadAsync();
