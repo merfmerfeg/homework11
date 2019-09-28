@@ -6,10 +6,10 @@ export default class FormPopup extends Popup {
     //form
     //submitBtn
 
-    _fieldList = [];
-
     constructor (id) {
         super(id);
+
+        this._fieldList = [];
 
         this.form = this.popupContainer.querySelector(".popup__form");
        

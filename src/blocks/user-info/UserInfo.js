@@ -1,10 +1,4 @@
-import './user-info.css';
-
 export default class UserInfo {
-	_id = undefined;
-	_userName = undefined;
-	_userJob = undefined;
-	_userPhotoLink = undefined;
 
 	constructor(id, userName, userJob, userPhotoLink) {
 		this.userInfoContainer = document.querySelector(".user-info");

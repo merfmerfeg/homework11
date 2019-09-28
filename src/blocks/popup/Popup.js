@@ -1,5 +1,3 @@
-import './popup.css';
-
 export default class Popup {
     //popupContainer
     constructor (id) {

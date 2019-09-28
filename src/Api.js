@@ -1,7 +1,5 @@
 export default class Api {
-    _tokenId = undefined;
-    _cohortNum = undefined;
-    _serverAddress = undefined;
+
     constructor(tokenId, cohortNum, serverAddress) {
         this._tokenId = tokenId;
         this._cohortNum = cohortNum;

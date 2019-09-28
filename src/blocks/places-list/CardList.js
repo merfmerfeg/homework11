@@ -1,4 +1,3 @@
-import './places-list.css';
 import Card from "../place-card/Card"
 
 export default class CardList {

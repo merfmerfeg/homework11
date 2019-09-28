@@ -1,5 +1,3 @@
-import './place-card.css';
-
 export default class Card {
     /* Можно лучше: когда много параметров, лучше обернуть их в объект, иначе легко запутаться в их последовательности */
     constructor(id, name, link, owner, likes, userId, imagePopupClass, onServerLikeCard, onServerUnlikeCard) {
