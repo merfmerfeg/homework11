@@ -1,11 +1,15 @@
-class FormPopup extends Popup {
+import Popup from "./Popup";
+import Field from "./Field";
+import ButtonSubmit from "./ButtonSubmit";
+
+export default class FormPopup extends Popup {
     //form
     //submitBtn
 
-    _fieldList = [];
-
     constructor (id) {
         super(id);
+
+        this._fieldList = [];
 
         this.form = this.popupContainer.querySelector(".popup__form");
        

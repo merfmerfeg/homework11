@@ -1,4 +1,6 @@
-class CardList {
+import Card from "../place-card/Card"
+
+export default class CardList {
 
     /* Можно лучше: когда много параметров, лучше обернуть их в объект, иначе легко запутаться в их последовательности */
     constructor(selector, initialCardList, userId, imagePopupClass, 

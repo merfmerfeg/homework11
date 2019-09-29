@@ -1,4 +1,6 @@
-class ImagePopup extends Popup {
+import Popup from "./Popup";
+
+export default class ImagePopup extends Popup {
     open(imageLink) {
         const image = this.popupContainer.querySelector('.popup__image');
         image.setAttribute('src', imageLink);

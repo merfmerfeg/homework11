@@ -1,7 +1,4 @@
-class ButtonSubmit {
-    _enableFlag = false;
-    _loadFlag = false;
-    _textButton = undefined;
+export default class ButtonSubmit {
 
     constructor (button) {
         this.buttonContainer = button;
